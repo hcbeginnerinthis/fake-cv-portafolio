@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horley Castro Hincapi — Portafolio Profesional | Auxiliar Contable y Técnico en Datos para IA</title>
+<meta name="description" content="Portafolio de Horley Castro Hincapi: auxiliar contable con conocimientos administrativos, experiencia en PROMAPAN SAS y el Colegio Filipense N.S.L. Actualmente cursa el Técnico en Procesamiento de Datos para Modelos de Inteligencia Artificial en el SENA.">
+<meta name="theme-color" content="#F8F5F2">
+<meta property="og:title" content="Horley Castro Hincapi — Portafolio Profesional">
+<meta property="og:description" content="Auxiliar contable · Conocimientos en Contapyme, Mekano y Binaps · Técnico en Procesamiento de Datos para Modelos de IA — SENA (en curso).">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233A3D43'/%3E%3Ctext x='32' y='42' font-family='Georgia, serif' font-size='28' fill='%23F8F5F2' text-anchor='middle'%3EHC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+/* =====================================================
+   TOKENS — Referencia "editorial claro" (imagen2.webp)
+   ===================================================== */
+:root{
+  --paper:#F8F5F2;
+  --paper-2:#FDFDFD;
+  --stone:#E8E7E3;
+  --sand:#D7D3CB;
+  --sand-2:#CCC6C0;
+  --dust:#AFC8D4;
+  --dust-deep:#94A7AA;
+  --dust-soft:#E3EDF1;
+  --ink:#3A3D43;
+  --ink-soft:#6B7078;
+  --night:#23252A;
+
+  --font-display:"Jost","Futura","Helvetica Neue",Arial,sans-serif;
+  --font-body:"Inter","Helvetica Neue",Arial,sans-serif;
+
+  --step--1:.8rem;
+  --step-0:1rem;
+  --step-1:clamp(1.1rem,1.02rem + .4vw,1.3rem);
+  --step-2:clamp(1.4rem,1.2rem + .9vw,2rem);
+  --step-3:clamp(1.9rem,1.4rem + 2.2vw,3rem);
+  --step-4:clamp(2.5rem,1.5rem + 4.5vw,5.2rem);
+  --step-5:clamp(3rem,1.4rem + 8vw,9rem);
+
+  --radius-sm:14px;
+  --radius:24px;
+  --radius-lg:34px;
+  --radius-pill:999px;
+  --container:1240px;
+  --shadow:0 22px 45px -28px rgba(35,37,42,.45);
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--ink)}
+.container{width:min(100% - 2.5rem, var(--container));margin-inline:auto}
+.eyebrow{font-family:var(--font-display);font-weight:500;font-size:var(--step--1);text-transform:uppercase;letter-spacing:.28em;color:var(--dust-deep)}
+.skip-link{position:absolute;left:-9999px;top:.5rem;background:var(--ink);color:var(--paper);padding:.6rem 1rem;border-radius:var(--radius-sm);z-index:100}
+.skip-link:focus{left:.5rem}
+:focus-visible{outline:2px solid var(--dust-deep);outline-offset:3px}
+
+/* ============ PROGRESS BAR ============ */
+#scrollbar{position:fixed;top:0;left:0;height:3px;width:0%;background:var(--dust-deep);z-index:1000;transition:width .1s linear}
+
+/* ============ HEADER / NAV ============ */
+.site-header{position:sticky;top:0;z-index:900;background:rgba(248,245,242,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+.site-header.is-scrolled{border-bottom-color:var(--stone);box-shadow:0 8px 30px -18px rgba(35,37,42,.35)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:72px;width:min(100% - 2.5rem, var(--container));margin-inline:auto}
+.logo{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.logo__mark{width:40px;height:40px;flex:0 0 auto}
+.logo__text{font-family:var(--font-display);font-weight:500;letter-spacing:.18em;font-size:.78rem;line-height:1.15;text-transform:uppercase;color:var(--ink)}
+.logo__text small{display:block;font-weight:300;letter-spacing:.32em;color:var(--ink-soft);font-size:.58rem}
+.nav__links{display:none;gap:1.6rem;list-style:none}
+.nav__link{position:relative;font-family:var(--font-display);text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;font-weight:400;text-decoration:none;padding:.35rem 0;color:var(--ink)}
+.nav__link::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--dust-deep);transition:width .35s var(--ease)}
+.nav__link:hover::after,.nav__link.is-active::after{width:100%}
+.nav__link.is-active{color:var(--night)}
+.nav__actions{display:none;align-items:center;gap:.5rem}
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:var(--radius-pill);border:1px solid var(--sand);background:var(--paper-2);text-decoration:none;color:var(--ink);transition:transform .3s var(--ease),border-color .3s}
+.icon-btn:hover{transform:translateY(-2px);border-color:var(--dust)}
+.nav__cta{display:none;font-family:var(--font-display);text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:500;text-decoration:none;background:var(--ink);color:var(--paper);padding:.7rem 1.2rem;border-radius:var(--radius-pill);transition:transform .3s var(--ease)}
+.nav__cta:hover{transform:translateY(-2px)}
+.burger{display:inline-flex;width:42px;height:42px;flex-direction:column;align-items:center;justify-content:center;gap:5px;background:none;border:1px solid var(--sand);border-radius:var(--radius-sm);cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:var(--ink);transition:.3s var(--ease)}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ============ MOBILE MENU ============ */
+.mobile-menu{position:fixed;inset:0;z-index:950;background:var(--night);color:var(--paper);display:flex;flex-direction:column;padding:1.2rem 1.6rem 2rem;transform:translateY(-100%);visibility:hidden;opacity:0;transition:transform .45s var(--ease),opacity .35s,visibility .45s}
+.mobile-menu.is-open{transform:translateY(0);visibility:visible;opacity:1}
+.mobile-menu__top{display:flex;align-items:center;justify-content:space-between;height:48px}
+.mobile-menu__close{background:none;border:1px solid rgba(248,245,242,.3);color:var(--paper);border-radius:var(--radius-sm);width:42px;height:42px;cursor:pointer;font-size:1.2rem}
+.mobile-menu__list{list-style:none;margin-top:2rem;display:flex;flex-direction:column;gap:.4rem}
+.mobile-menu__link{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--font-display);font-weight:300;font-size:clamp(1.7rem,6vw,2.4rem);text-transform:uppercase;text-decoration:none;color:var(--paper);padding:.7rem .2rem;border-bottom:1px solid rgba(248,245,242,.12)}
+.mobile-menu__link small{font-size:.7rem;letter-spacing:.25em;color:var(--dust)}
+.mobile-menu__foot{margin-top:auto;font-size:.85rem;color:var(--dust);letter-spacing:.08em}
+.mobile-menu__foot a{color:var(--paper)}
+
+/* ============ HERO ============ */
+.hero{display:grid;grid-template-columns:minmax(0,1fr);gap:1.2rem;align-items:center;padding:1.5rem 0 3rem}
+.hero__text{min-width:0}
+.hero__eyebrow{display:flex;align-items:center;gap:.7rem;margin-bottom:.6rem;font-family:var(--font-display);font-weight:500;font-size:var(--step--1);text-transform:uppercase;letter-spacing:.22em;color:var(--ink-soft)}
+.hero__eyebrow .line{flex:1;height:1px;background:var(--sand)}
+.hero__title{font-family:var(--font-display);font-weight:500;text-transform:uppercase;line-height:.95;letter-spacing:-.01em;font-size:var(--step-5);color:var(--ink)}
+.hero__title em{font-style:italic;font-weight:300;color:var(--dust-deep)}
+.hero__lead{max-width:56ch;margin-top:1rem;font-size:var(--step-0);color:var(--ink-soft)}
+.hero__pills{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem}
+.pill{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:500;text-decoration:none;border:1px solid var(--ink);color:var(--ink);padding:.7rem 1.3rem;border-radius:var(--radius-pill);transition:background .3s,color .3s,transform .3s var(--ease)}
+.pill:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px)}
+.pill--ghost{border-color:var(--sand);color:var(--ink-soft)}
+.pill--ghost:hover{border-color:var(--ink);color:var(--paper)}
+
+.hero__visual{margin-top:1.6rem;position:relative;border-radius:var(--radius-lg);overflow:hidden;background:linear-gradient(160deg,var(--dust) 0%,var(--dust-deep) 100%);box-shadow:var(--shadow);display:grid;place-items:center;padding:1.4rem 1rem 0}
+.hero__portrait{width:min(100%,340px);height:auto;mix-blend-mode:multiply;filter:contrast(1.03)}
+.hero__card{position:absolute;left:.9rem;bottom:.9rem;max-width:290px;background:rgba(35,37,42,.94);backdrop-filter:blur(6px);color:#fff;border-radius:var(--radius);padding:1rem 1.1rem 1.1rem}
+.hero__card .k{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dust)}
+.hero__card p{font-size:.82rem;line-height:1.5;margin:.35rem 0 .6rem;color:#F5F3EF}
+.hero__card a{font-family:var(--font-display);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#fff;text-decoration:none;border-bottom:1px solid var(--dust-deep);padding-bottom:2px}
+.hero__card a:hover{color:var(--dust)}
+.hero__badge{position:absolute;top:1.1rem;left:1.1rem;max-width:calc(100% - 2.2rem);background:var(--paper);color:var(--ink);font-family:var(--font-display);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;padding:.55rem .9rem;border-radius:var(--radius-pill);box-shadow:var(--shadow)}
+.hero__badge strong{color:var(--dust-deep)}
+.scroll-cue{display:flex;align-items:center;gap:.6rem;margin-top:1.1rem;color:var(--ink-soft);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase}
+.scroll-cue .dot{width:22px;height:34px;border:1px solid var(--sand-2);border-radius:var(--radius-pill);position:relative}
+.scroll-cue .dot::after{content:"";position:absolute;top:6px;left:50%;width:4px;height:6px;margin-left:-2px;border-radius:var(--radius-pill);background:var(--dust-deep);animation:wheel 1.8s infinite}
+@keyframes wheel{0%{opacity:0;transform:translateY(0)}40%{opacity:1}80%,100%{opacity:0;transform:translateY(8px)}}
+
+/* ============ STATS STRIP ============ */
+.stats{border-block:1px solid var(--sand);padding:1.4rem 0}
+.stats__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem 1.5rem}
+.stat{border-right:1px solid var(--sand);padding-right:.8rem}
+.stat:nth-child(2n){border-right:none}
+.stat__num{font-family:var(--font-display);font-weight:500;font-size:var(--step-3);line-height:1;color:var(--ink)}
+.stat__num b{color:var(--dust-deep)}
+.stat__lbl{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin-top:.35rem}
+
+/* ============ SECTION HEAD ============ */
+.section{padding:3.2rem 0}
+.section--tight{padding:2.4rem 0}
+.section-head{display:grid;grid-template-columns:minmax(0,1fr);gap:.8rem;margin-bottom:1.6rem}
+.section-title{font-family:var(--font-display);font-weight:500;font-size:var(--step-4);line-height:.96;text-transform:uppercase;color:var(--ink)}
+.section-title--soft{color:var(--sand);font-weight:300}
+.section-kicker{display:flex;align-items:center;gap:.7rem}
+.section-kicker .num{font-family:var(--font-display);font-size:.8rem;color:var(--dust-deep);letter-spacing:.2em}
+.section-kicker .bar{flex:1;height:1px;background:var(--sand)}
+
+/* ============ PERFIL ============ */
+.perfil__grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1.5rem}
+.perfil__text{font-size:var(--step-1);font-weight:400;color:var(--ink)}
+.perfil__text strong{color:var(--night)}
+.perfil__tools{display:grid;gap:.75rem;margin-top:1.3rem}
+.tool{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--stone);background:var(--paper-2);border-radius:var(--radius-sm);padding:.7rem 1rem}
+.tool__name{font-family:var(--font-display);font-weight:500;letter-spacing:.06em}
+.tool__tag{font-size:.68rem;text-transform:uppercase;letter-spacing:.15em;color:var(--dust-deep)}
+.perfil__aside{background:var(--night);color:var(--paper);border-radius:var(--radius);padding:1.4rem;display:flex;flex-direction:column;gap:1rem}
+.perfil__aside .k{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dust)}
+.perfil__aside ul{list-style:none;display:grid;gap:.45rem;font-size:.9rem;color:#E9E6E1}
+.perfil__aside li::before{content:"→";color:var(--dust-deep);margin-right:.5rem}
+
+/* ============ EXPERIENCIA ============ */
+.timeline{display:grid;grid-template-columns:minmax(0,1fr);gap:1.1rem}
+.exp-card{position:relative;display:grid;grid-template-columns:auto 1fr;gap:1rem;background:var(--paper-2);border:1px solid var(--stone);border-radius:var(--radius);padding:1.1rem;transition:transform .35s var(--ease),box-shadow .35s}
+.exp-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.exp-card__index{font-family:var(--font-display);font-weight:300;font-size:clamp(2rem,9vw,3.2rem);line-height:1;color:var(--dust);align-self:start}
+.exp-card__dates{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dust-deep)}
+.exp-card__role{font-family:var(--font-display);font-weight:500;font-size:1.05rem;line-height:1.25;margin:.35rem 0;color:var(--night)}
+.exp-card__org{font-size:.85rem;color:var(--ink-soft);margin-bottom:.5rem}
+.exp-card__desc{font-size:.86rem;color:var(--ink-soft)}
+.chip-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.6rem}
+.chip{font-size:.66rem;text-transform:uppercase;letter-spacing:.12em;border:1px solid var(--sand);border-radius:var(--radius-pill);padding:.25rem .6rem;color:var(--ink-soft)}
+
+/* ============ EDUCACIÓN ============ */
+.edu-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+.edu-card{border:1px solid var(--stone);background:var(--paper-2);border-radius:var(--radius);padding:1.1rem;display:flex;flex-direction:column;gap:.35rem;position:relative}
+.edu-card--featured{background:var(--ink);border-color:var(--night);color:var(--paper)}
+.edu-card--featured .edu-card__school{color:var(--dust)}
+.edu-card__school{font-family:var(--font-display);font-weight:500;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dust-deep)}
+.edu-card__program{font-family:var(--font-display);font-weight:500;font-size:1rem;line-height:1.3;color:inherit}
+.edu-card__period{font-size:.8rem;color:var(--ink-soft)}
+.edu-card--featured .edu-card__period{color:#C9CDD4}
+.edu-card--featured p{font-size:.85rem;color:#DDE1E6}
+.live-badge{position:absolute;top:.9rem;right:.9rem;display:inline-flex;align-items:center;gap:.4rem;font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;background:var(--dust-soft);color:var(--night);border-radius:var(--radius-pill);padding:.35rem .7rem}
+.live-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:#2E9E5B;animation:pulse 1.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(46,158,91,.5)}70%{box-shadow:0 0 0 8px rgba(46,158,91,0)}100%{box-shadow:0 0 0 0 rgba(46,158,91,0)}}
+
+/* ============ APTITUDES ============ */
+.aptitudes__grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+.skill{background:var(--paper-2);border:1px solid var(--stone);border-radius:var(--radius);padding:1rem 1.1rem}
+.skill__top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem}
+.skill__name{font-family:var(--font-display);font-weight:500;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}
+.skill__pct{font-family:var(--font-display);color:var(--dust-deep);font-size:.8rem}
+.skill__bar{height:8px;background:var(--stone);border-radius:var(--radius-pill);overflow:hidden}
+.skill__fill{height:100%;width:0;background:linear-gradient(90deg,var(--dust),var(--dust-deep));border-radius:var(--radius-pill);transition:width 1.2s var(--ease)}
+
+/* ============ AFICIONES / IDIOMAS ============ */
+.side-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem;margin-top:1rem}
+.side-card{border:1px solid var(--stone);border-radius:var(--radius);padding:1.1rem;background:var(--paper-2)}
+.side-card h3{font-family:var(--font-display);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dust-deep);margin-bottom:.6rem}
+.side-card ul{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem}
+
+/* ============ CONTACTO ============ */
+.contact{background:var(--night);color:var(--paper);border-radius:calc(var(--radius-lg) + 4px);padding:2rem 1.4rem;margin:0 .75rem}
+.contact .section-title{color:var(--paper)}
+.contact .section-kicker .num{color:var(--dust)}
+.contact .section-kicker .bar{background:rgba(248,245,242,.18)}
+.contact__lead{max-width:48ch;color:#C9CDD4;margin-bottom:1.4rem}
+.contact__grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+.contact-item{border:1px solid rgba(248,245,242,.14);border-radius:var(--radius);padding:1rem;text-decoration:none;color:inherit;transition:border-color .3s,transform .3s var(--ease)}
+.contact-item:hover{border-color:var(--dust);transform:translateY(-2px)}
+.contact-item .k{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dust)}
+.contact-item .v{font-family:var(--font-display);font-weight:400;font-size:1.05rem;margin-top:.25rem;word-break:break-all}
+.refs{margin-top:1.6rem}
+.refs__title{font-family:var(--font-display);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dust);margin-bottom:.7rem}
+.refs__grid{display:grid;grid-template-columns:minmax(0,1fr);gap:.6rem}
+.ref{border-left:2px solid var(--dust-deep);padding:.35rem .8rem;background:rgba(248,245,242,.05);border-radius:0 var(--radius-sm) var(--radius-sm) 0}
+.ref b{font-weight:500;color:#fff}
+.ref span{display:block;font-size:.8rem;color:#C9CDD4}
+.ref small{font-size:.78rem;color:var(--dust)}
+
+/* ============ FOOTER ============ */
+.site-footer{padding:2rem 0 2.5rem;text-align:center;color:var(--ink-soft);font-size:.82rem}
+.site-footer .name{font-family:var(--font-display);letter-spacing:.2em;text-transform:uppercase;color:var(--ink);font-size:.8rem}
+.back-top{display:inline-flex;margin-top:1rem;border:1px solid var(--sand);border-radius:var(--radius-pill);padding:.5rem 1.1rem;text-decoration:none;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);transition:border-color .3s}
+.back-top:hover{border-color:var(--dust-deep)}
+
+/* ============ REVEAL ============ */
+.js .reveal{opacity:0;transform:translateY(26px)}
+.js .reveal.is-visible{opacity:1;transform:none;transition:opacity .7s var(--ease),transform .7s var(--ease)}
+
+/* ============ MEDIA — TABLET ============ */
+@media (min-width:640px){
+  .hero__visual{padding:2rem 2rem 0}
+  .hero__portrait{width:min(100%,420px)}
+  .stats__grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .stat{border-right:1px solid var(--sand);padding-right:.9rem}
+  .stat:last-child{border-right:none}
+  .edu-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .contact__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .refs__grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .side-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+/* ============ MEDIA — DESKTOP ============ */
+@media (min-width:900px){
+  .nav__links{display:flex}
+  .nav__actions{display:flex}
+  .nav__cta{display:inline-flex}
+  .burger{display:none}
+  .hero{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:2rem;align-items:center;padding-top:2.2rem}
+  .hero__visual{margin-top:0}
+  .section-head{grid-template-columns:minmax(0,1fr) auto;align-items:end}
+  .perfil__grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:2rem}
+  .timeline{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .exp-card{grid-template-columns:1fr;gap:.6rem}
+  .edu-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) minmax(0,1fr)}
+  .aptitudes__grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+  .side-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.2rem}
+  .contact{padding:3rem;margin:0}
+  .contact__grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (min-width:1200px){
+  .hero{gap:3rem}
+  .hero__portrait{width:min(100%,460px)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+  .js .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+<div id="scrollbar" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav" aria-label="Navegación principal">
+    <a class="logo" href="#inicio" aria-label="Horley Castro — inicio">
+      <svg class="logo__mark" viewBox="0 0 64 64" role="img" aria-label="Monograma HC"><rect width="64" height="64" rx="14" fill="#3A3D43"/><text x="32" y="41" font-family="Georgia, serif" font-size="27" fill="#F8F5F2" text-anchor="middle">HC</text></svg>
+      <span class="logo__text">Horley Castro<small>Portfolio ’26</small></span>
+    </a>
+    <ul class="nav__links">
+      <li><a class="nav__link" href="#perfil" data-nav="perfil">Perfil</a></li>
+      <li><a class="nav__link" href="#experiencia" data-nav="experiencia">Experiencia</a></li>
+      <li><a class="nav__link" href="#educacion" data-nav="educacion">Educación</a></li>
+      <li><a class="nav__link" href="#aptitudes" data-nav="aptitudes">Aptitudes</a></li>
+      <li><a class="nav__link" href="#contacto" data-nav="contacto">Contacto</a></li>
+    </ul>
+    <div class="nav__actions">
+      <a class="icon-btn" href="mailto:Horley69@hotmail.com" aria-label="Enviar correo a Horley"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M4 7l8 6 8-6"/></svg></a>
+      <a class="icon-btn" href="tel:+573006588969" aria-label="Llamar al 3006588969"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .37 2 .72 2.9a2 2 0 0 1-.45 2.11L8.09 12a16 16 0 0 0 6 6l3.27-1.29a2 2 0 0 1 2.11.45c.9.35 1.9.59 2.9.72A2 2 0 0 1 22 16.92z"/></svg></a>
+      <a class="nav__cta" href="mailto:Horley69@hotmail.com">Contáctame</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menú móvil" aria-hidden="true">
+  <div class="mobile-menu__top">
+    <span class="eyebrow" style="color:var(--dust)">Menú</span>
+    <button class="mobile-menu__close" id="closeMenu" aria-label="Cerrar menú">✕</button>
+  </div>
+  <ul class="mobile-menu__list">
+    <li><a class="mobile-menu__link" href="#perfil">Perfil <small>01</small></a></li>
+    <li><a class="mobile-menu__link" href="#experiencia">Experiencia <small>02</small></a></li>
+    <li><a class="mobile-menu__link" href="#educacion">Educación <small>03</small></a></li>
+    <li><a class="mobile-menu__link" href="#aptitudes">Aptitudes <small>04</small></a></li>
+    <li><a class="mobile-menu__link" href="#contacto">Contacto <small>05</small></a></li>
+  </ul>
+  <div class="mobile-menu__foot">Horley69@hotmail.com<br><a href="tel:+573006588969">300 658 8969</a></div>
+</div>
+
+<main id="main">
+<!-- ============ HERO ============ -->
+<section class="hero container" id="inicio">
+  <div class="hero__text">
+    <p class="hero__eyebrow reveal is-visible"><span>Portafolio ’26</span><span class="line"></span><span>Colombia</span></p>
+    <h1 class="hero__title reveal is-visible">Horley<br>Castro<br><em>Hincapi</em></h1>
+    <p class="hero__lead reveal is-visible">Auxiliar contable con conocimientos administrativos. Iniciativa, un gran compromiso ético y capacidad de trabajo en equipo. Busco un empleo que posibilite mi desarrollo profesional y me permita adquirir más experiencia en el sector.</p>
+    <div class="hero__pills reveal is-visible">
+      <a class="pill" href="#experiencia">Ver experiencia</a>
+      <a class="pill pill--ghost" href="mailto:Horley69@hotmail.com">Contáctame</a>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span class="dot"></span> Desliza</div>
+  </div>
+  <div class="hero__visual reveal">
+    <span class="hero__badge"><strong>SENA</strong> · IA en curso</span>
+    <svg aria-hidden="true" style="position:absolute;top:-1px;left:-1px;width:120px;opacity:.35" viewBox="0 0 294 385"><path d="M24.4 12.7C23.2 14.4 22 16.3 20.9 18.4 18.1 23.8 14.8 27.9 11.3 30.7 7.9 33.5 4.1 35 0.3 35L0 35 0 385.3 90.8 385.3C99.2 385.3 106 378.5 106 370.1L106 42.8C106 26.2 119.5 12.7 136.1 12.7L294 12.7 294 0 44.4 0C37.1 0 30.1 4.5 24.4 12.7Z" fill="#F8F5F2"/></svg>
+    <img class="hero__portrait" src="data:image/jpeg;base64,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" alt="Retrato profesional de Horley Castro Hincapi" width="241" height="292">
+    <aside class="hero__card">
+      <span class="k">Ahora mismo</span>
+      <p>Cursando el <strong>Técnico en Procesamiento de Datos para Modelos de Inteligencia Artificial</strong> en el SENA — uniendo contabilidad y análisis de datos.</p>
+      <a href="#educacion">Ver educación →</a>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats container" aria-label="Datos clave">
+  <div class="stats__grid">
+    <div class="stat reveal"><div class="stat__num">12<b>+</b></div><div class="stat__lbl">Años de experiencia</div></div>
+    <div class="stat reveal"><div class="stat__num">3</div><div class="stat__lbl">Empresas y entidades</div></div>
+    <div class="stat reveal"><div class="stat__num">8</div><div class="stat__lbl">Semestres Admón. Empresas</div></div>
+    <div class="stat reveal"><div class="stat__num"><b>IA</b></div><div class="stat__lbl">Técnico SENA en curso</div></div>
+  </div>
+</section>
+
+<!-- ============ PERFIL ============ -->
+<section class="section" id="perfil">
+  <div class="container">
+    <div class="section-kicker reveal"><span class="num">01 — PERFIL</span><span class="bar"></span></div>
+    <div class="section-head"><h2 class="section-title reveal">Perfil<br><span class="section-title--soft">Profesional</span></h2></div>
+    <div class="perfil__grid">
+      <div class="reveal">
+        <p class="perfil__text"><strong>Auxiliar contable</strong> con conocimientos administrativos. Poseo iniciativa, un gran <strong>compromiso ético</strong> y capacidad de trabajo en equipo. Busco un empleo que posibilite mi desarrollo profesional y me permita adquirir más experiencia en el sector.</p>
+        <p class="perfil__text" style="margin-top:1rem">Hoy complementa la contabilidad con formación técnica en <strong>procesamiento de datos para modelos de IA</strong> — perfil híbrido entre administración y analítica.</p>
+        <div class="perfil__tools">
+          <div class="tool"><span class="tool__name">Contapyme</span><span class="tool__tag">Contable</span></div>
+          <div class="tool"><span class="tool__name">Mekano</span><span class="tool__tag">Contable</span></div>
+          <div class="tool"><span class="tool__name">Binaps</span><span class="tool__tag">Contable</span></div>
+          <div class="tool"><span class="tool__name">Office / Ofimática</span><span class="tool__tag">Productividad</span></div>
+        </div>
+      </div>
+      <aside class="perfil__aside reveal" aria-label="Datos adicionales">
+        <div><span class="k">Contacto</span><ul><li>300 658 8969</li><li>Horley69@hotmail.com</li><li>Casado</li></ul></div>
+        <div><span class="k">Idiomas</span><ul><li>Inglés — Intermedio</li></ul></div>
+        <div><span class="k">Áreas de interés</span><ul><li>Contabilidad y tesorería</li><li>Administración y atención a clientes</li><li>Procesamiento de datos e IA</li></ul></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCIA ============ -->
+<section class="section" id="experiencia" style="background:var(--paper-2);border-block:1px solid var(--stone)">
+  <div class="container">
+    <div class="section-kicker reveal"><span class="num">02 — EXPERIENCIA</span><span class="bar"></span></div>
+    <div class="section-head"><h2 class="section-title reveal">Experiencia<br><span class="section-title--soft">Laboral</span></h2></div>
+    <div class="timeline">
+      <article class="exp-card reveal">
+        <div class="exp-card__index">01</div>
+        <div>
+          <span class="exp-card__dates">Feb 2024 — Actualidad</span>
+          <h3 class="exp-card__role">Auxiliar contable</h3>
+          <p class="exp-card__org">PROMAPAN SAS</p>
+          <p class="exp-card__desc">Digitar los documentos asignados en Mekano y Binaps; mantener la información al día, incluso tras un permiso de 15 días — a la semana siguiente ya tenía la información desatracada.</p>
+          <div class="chip-row"><span class="chip">Mekano</span><span class="chip">Binaps</span><span class="chip">Archivo</span></div>
+        </div>
+      </article>
+      <article class="exp-card reveal">
+        <div class="exp-card__index">02</div>
+        <div>
+          <span class="exp-card__dates">Nov 2020 — Dic 2024</span>
+          <h3 class="exp-card__role">Tesorero — Auxiliar contable</h3>
+          <p class="exp-card__org">Colegio Filipense Nuestra Señora de Lourdes</p>
+          <p class="exp-card__desc">Recibir dinero, realizar recibos y contabilizarlos; digitar documentos en el programa contable y mantenerlos archivados.</p>
+          <div class="chip-row"><span class="chip">Tesorería</span><span class="chip">Contabilidad</span><span class="chip">Archivo</span></div>
+        </div>
+      </article>
+      <article class="exp-card reveal">
+        <div class="exp-card__index">03</div>
+        <div>
+          <span class="exp-card__dates">May 2012 — Nov 2020</span>
+          <h3 class="exp-card__role">Auxiliar administrativo</h3>
+          <p class="exp-card__org">Máquinas y Repuestos del Café</p>
+          <p class="exp-card__desc">Atención al cliente, gestión con proveedores para encontrar la máquina apropiada al mejor precio, ensamble de máquinas nuevas y capacitaciones de manejo.</p>
+          <div class="chip-row"><span class="chip">Atención al cliente</span><span class="chip">Proveedores</span><span class="chip">Ensamble</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCACIÓN ============ -->
+<section class="section" id="educacion">
+  <div class="container">
+    <div class="section-kicker reveal"><span class="num">03 — EDUCACIÓN</span><span class="bar"></span></div>
+    <div class="section-head"><h2 class="section-title reveal">Formación<br><span class="section-title--soft">Académica</span></h2></div>
+    <div class="edu-grid">
+      <article class="edu-card edu-card--featured reveal">
+        <span class="live-badge">En curso</span>
+        <span class="edu-card__school">SENA — Servicio Nacional de Aprendizaje</span>
+        <h3 class="edu-card__program">Técnico en Procesamiento de Datos para Modelos de Inteligencia Artificial</h3>
+        <p>Formación para limpiar, transformar y preparar datasets que alimentan modelos de IA; fundamentos de Python, análisis de datos y calidad de la información para entrenar sistemas inteligentes.</p>
+        <span class="edu-card__period">2026 — Actualidad</span>
+      </article>
+      <article class="edu-card reveal">
+        <span class="edu-card__school">BYU Pathway</span>
+        <h3 class="edu-card__program">Curso English Connect 3</h3>
+        <span class="edu-card__period">Junio 2026 —</span>
+      </article>
+      <article class="edu-card reveal">
+        <span class="edu-card__school">Universidad Nacional de Colombia</span>
+        <h3 class="edu-card__program">Administración de Empresas</h3>
+        <p>8 semestres — no terminada.</p>
+        <span class="edu-card__period">Enero 1998 — Junio 2003</span>
+      </article>
+      <article class="edu-card reveal" style="grid-column:1 / -1">
+        <span class="edu-card__school">Instituto Técnico San Rafael</span>
+        <h3 class="edu-card__program">Bachiller Técnico Ebanista</h3>
+        <span class="edu-card__period">Enero 1982 — Diciembre 1988</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APTITUDES ============ -->
+<section class="section" id="aptitudes" style="background:var(--paper-2);border-top:1px solid var(--stone)">
+  <div class="container">
+    <div class="section-kicker reveal"><span class="num">04 — APTITUDES</span><span class="bar"></span></div>
+    <div class="section-head"><h2 class="section-title reveal">Aptitudes<br><span class="section-title--soft">& Habilidades</span></h2></div>
+    <div class="aptitudes__grid js">
+      <div class="skill reveal"><div class="skill__top"><span class="skill__name">Responsable</span><span class="skill__pct">100%</span></div><div class="skill__bar"><div class="skill__fill" data-fill="100"></div></div></div>
+      <div class="skill reveal"><div class="skill__top"><span class="skill__name">Trabajador</span><span class="skill__pct">100%</span></div><div class="skill__bar"><div class="skill__fill" data-fill="100"></div></div></div>
+      <div class="skill reveal"><div class="skill__top"><span class="skill__name">Honesto</span><span class="skill__pct">100%</span></div><div class="skill__bar"><div class="skill__fill" data-fill="100"></div></div></div>
+      <div class="skill reveal"><div class="skill__top"><span class="skill__name">Aprendizaje</span><span class="skill__pct">100%</span></div><div class="skill__bar"><div class="skill__fill" data-fill="100"></div></div></div>
+      <div class="skill reveal"><div class="skill__top"><span class="skill__name">Aptitud positiva</span><span class="skill__pct">100%</span></div><div class="skill__bar"><div class="skill__fill" data-fill="100"></div></div></div>
+    </div>
+    <div class="side-grid">
+      <div class="side-card reveal"><h3>En formación — SENA</h3><ul><li class="chip">Python</li><li class="chip">Procesamiento de datos</li><li class="chip">Modelos de IA</li><li class="chip">Limpieza y transformación de datasets</li><li class="chip">Calidad de información</li></ul></div>
+      <div class="side-card reveal"><h3>Aficiones</h3><ul><li class="chip">Caminar</li><li class="chip">Pintar</li><li class="chip">Leer</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="section section--tight" id="contacto">
+  <div class="contact reveal">
+    <div class="section-kicker"><span class="num">05 — CONTACTO</span><span class="bar"></span></div>
+    <h2 class="section-title" style="margin:.6rem 0 1rem">Get in<br>touch</h2>
+    <p class="contact__lead">Disponible para oportunidades en contabilidad, administración y soporte de datos. Respondo rápido.</p>
+    <div class="contact__grid">
+      <a class="contact-item" href="mailto:Horley69@hotmail.com"><span class="k">Correo</span><span class="v">Horley69@hotmail.com</span></a>
+      <a class="contact-item" href="tel:+573006588969"><span class="k">Teléfono</span><span class="v">300 658 8969</span></a>
+      <div class="contact-item"><span class="k">Estado civil</span><span class="v">Casado</span></div>
+    </div>
+    <div class="refs">
+      <p class="refs__title">Referencias</p>
+      <div class="refs__grid">
+        <div class="ref"><b>José Martin González</b><span>Docente — SENA</span><small>311 332 0587</small></div>
+        <div class="ref"><b>Consuelo Ramírez</b><span>Administradora — Frisby</span><small>314 758 3302</small></div>
+        <div class="ref"><b>German Moreno</b><span>Ingeniero Químico</span><small>321 812 2034</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <p class="name">Horley Castro Hincapi</p>
+  <p>© <span id="currentYear">2026</span> · Portafolio profesional · Diseñado mobile-first</p>
+  <a class="back-top" href="#inicio">↑ Volver arriba</a>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* Año dinámico */
+  var yearEl = document.getElementById('currentYear');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* Barra de progreso de scroll */
+  var bar = document.getElementById('scrollbar');
+  var header = document.getElementById('siteHeader');
+  function updateScroll() {
+    var doc = document.documentElement;
+    var max = doc.scrollHeight - doc.clientHeight;
+    var pct = max > 0 ? (doc.scrollTop / max) * 100 : 0;
+    if (bar) bar.style.width = pct.toFixed(2) + '%';
+    if (header) header.classList.toggle('is-scrolled', doc.scrollTop > 12);
+  }
+  updateScroll();
+  window.addEventListener('scroll', updateScroll, { passive: true });
+
+  /* Menú móvil */
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('mobileMenu');
+  var closeBtn = document.getElementById('closeMenu');
+  function openMenu() {
+    if (!menu) return;
+    menu.classList.add('is-open');
+    menu.setAttribute('aria-hidden', 'false');
+    if (burger) burger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+    var first = menu.querySelector('.mobile-menu__link');
+    if (first) first.focus();
+  }
+  function closeMenu() {
+    if (!menu) return;
+    menu.classList.remove('is-open');
+    menu.setAttribute('aria-hidden', 'true');
+    if (burger) burger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    if (burger) burger.focus();
+  }
+  if (burger && menu) {
+    burger.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeMenu); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && menu.classList.contains('is-open')) closeMenu();
+    });
+  }
+
+  /* Reveal on scroll */
+  var revealEls = document.querySelectorAll('.reveal');
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if ('IntersectionObserver' in window && !reduced) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(function (el) { io.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  /* Animación de barras de aptitud */
+  var fills = document.querySelectorAll('.skill__fill');
+  function fillBars() {
+    fills.forEach(function (el) { el.style.width = (el.dataset.fill || '100') + '%'; });
+  }
+  var skillsGrid = document.querySelector('.aptitudes__grid');
+  if (skillsGrid && 'IntersectionObserver' in window) {
+    var so = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          fillBars();
+          so.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    so.observe(skillsGrid);
+  } else {
+    fillBars();
+  }
+
+  /* Link de navegación activo según sección visible */
+  var navLinks = document.querySelectorAll('.nav__link[data-nav]');
+  var sections = ['perfil', 'experiencia', 'educacion', 'aptitudes', 'contacto'].map(function (id) { return document.getElementById(id); });
+  function setActive(id) {
+    navLinks.forEach(function (link) { link.classList.toggle('is-active', link.dataset.nav === id); });
+  }
+  if ('IntersectionObserver' in window) {
+    var so2 = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) { if (entry.isIntersecting) setActive(entry.target.id); });
+    }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+    sections.forEach(function (s) { if (s) so2.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>

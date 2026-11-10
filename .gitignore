@@ -1,0 +1,15 @@
+# Sensible files
+tokens.txt
+*.env
+*.pem
+*.key
+# References
+refs/
+# Dependencies
+node_modules/
+# Build artifacts
+dist/
+# OS generated files
+.DS_Store
+# Logs
+*.log
